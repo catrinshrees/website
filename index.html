@@ -1,12 +1,374 @@
-{"name": "gardening_site_tailwind", "type": "code/html", "content": "<!DOCTYPE html>\n<html lang="en">\n<head>\n <meta charset="UTF-8">\n <meta name="viewport" content="width=device-width, initial-scale=1.0">\n <title>Green Haven Gardening</title>\n <script src="https://cdn.tailwindcss.com\">
-</script>\n <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap\
-" rel="stylesheet">\n <style>\n body { font-family: 'Inter', sans-serif; }\n </style>\n</head>\n<body class="bg-gray-50 text-gray-800">\n <!-- Header -->\n <header class="fixed top-0 w-full bg-white shadow z-50">\n <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">\n <h1 class="text-2xl font-bold text-green-700">Green Haven Gardening</h1>\n <nav class="space-x-6 hidden md:flex">\n <a href="#services" class="hover:text-green-700">Services</a>\n <a href="#about" class="hover:text-green-700">About</a>\n <a href="#contact" class="hover:text-green-700">Contact</a>\n </nav>\n <button id="menu-btn" class="md:hidden text-green-700">☰</button>\n </div>\n <div id="mobile-menu" class="hidden md:hidden bg-white px-6 pb-4">\n <a href="#services" class="block py-2 hover:text-green-700">Services</a>\n <a href="#about" class="block py-2 hover:text-green-700">About</a>\n <a href="#contact" class="block py-2 hover:text-green-700">Contact</a>\n </div>\n </header>\n\n <!-- Hero -->\n <section class="h-screen flex items-center justify-center bg-cover bg-center relative" style="background-image: url('https://source.unsplash.com/1600x900/?garden');\">\n
- <div class="absolute inset-0 bg-black bg-opacity-50"></div>\n <div class="relative z-10 text-center text-white px-6">\n <h2 class="text-5xl font-bold mb-4">Nurturing Gardens, Growing Beauty</h2>\n <p class="text-lg mb-6">Professional garden care and design services all year round.</p>\n <a href="#contact" class="bg-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition">Get in Touch</a>\n </div>\n </section>\n\n <!-- Services -->\n <section id="services" class="py-16 px-6 max-w-7xl mx-auto">\n <h3 class="text-3xl font-bold text-center mb-12">Our Services</h3>\n <div class="grid md:grid-cols-3 gap-10">\n <div class="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition">\n <img src="https://source.unsplash.com/600x400/?hedge\
-" alt="Hedging" class="rounded-xl mb-4 w-full object-cover">\n <h4 class="text-xl font-semibold mb-2">Hedging</h4>\n <p>Professional trimming and shaping of hedges for neat, elegant gardens.</p>\n </div>\n <div class="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition">\n <img src="https://source.unsplash.com/600x400/?lawn\
-" alt="Mowing" class="rounded-xl mb-4 w-full object-cover">\n <h4 class="text-xl font-semibold mb-2">Mowing & Edging</h4>\n <p>Keep your lawn fresh and healthy with precision mowing and edging.</p>\n </div>\n <div class="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition">\n <img src="https://source.unsplash.com/600x400/?pruning\
-" alt="Pruning" class="rounded-xl mb-4 w-full object-cover">\n <h4 class="text-xl font-semibold mb-2">Pruning & Plant Care</h4>\n <p>Careful pruning, lifting, and dividing plants to encourage growth and vitality.</p>\n </div>\n <div class="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition">\n <img src="https://source.unsplash.com/600x400/?mulching\
-" alt="Seasonal Work" class="rounded-xl mb-4 w-full object-cover">\n <h4 class="text-xl font-semibold mb-2">Seasonal Work</h4>\n <p>Cutting back in autumn, mulching before winter, and planting in spring/autumn.</p>\n </div>\n <div class="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition">\n <img src="https://source.unsplash.com/600x400/?tree\
-" alt="Fruit Tree Care" class="rounded-xl mb-4 w-full object-cover">\n <h4 class="text-xl font-semibold mb-2">Fruit Tree Care</h4>\n <p>Expert pruning and espalier training for healthier, productive fruit trees.</p>\n </div>\n <div class="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition">\n <img src="https://source.unsplash.com/600x400/?pond\
-" alt="Pond Care" class="rounded-xl mb-4 w-full object-cover">\n <h4 class="text-xl font-semibold mb-2">Pond & Compost</h4>\n <p>Pond maintenance, pond plant consultations, compost bays, and ongoing care.</p>\n </div>\n <div class="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition md:col-span-3">\n <img src="https://source.unsplash.com/1200x400/?plants\
-" alt="House Plants" class="rounded-xl mb-4 w-full object-cover">\n <h4 class="text-xl font-semibold mb-2">House Plant & Border Design</h4>\n <p>From compost maintenance and border design to indoor plant care, we bring life to every corner of your space.</p>\n </div>\n </div>\n </section>\n\n <!-- About -->\n <section id="about" class="bg-green-700 text-white py-16 px-6">\n <div class="max-w-5xl mx-auto text-center">\n <h3 class="text-3xl font-bold mb-6">About Us</h3>\n <p class="text-lg">At Green Haven Gardening, we are passionate about creating and maintaining vibrant outdoor spaces. With years of experience, we pride ourselves on offering professional, reliable, and eco-friendly gardening services tailored to each client’s unique needs.</p>\n </div>\n </section>\n\n <!-- Contact -->\n <section id="contact" class="py-16 px-6 max-w-5xl mx-auto">\n <h3 class="text-3xl font-bold text-center mb-12">Contact Us</h3>\n <form class="grid gap-6 bg-white p-8 rounded-2xl shadow">\n <input type="text" placeholder="Your Name" class="border p-3 rounded-lg">\n <input type="email" placeholder="Your Email" class="border p-3 rounded-lg">\n <textarea rows="5" placeholder="Your Message" class="border p-3 rounded-lg"></textarea>\n <button type="submit" class="bg-green-600 py-3 rounded-lg text-white font-semibold hover:bg-green-700 transition">Send Message</button>\n </form>\n <div class="text-center mt-8">\n <p>Email: <a href="mailto:info@greenhavengardening.com" class="text-green-700">info@greenhavengardening.com
-</a></p>\n <p>Phone: <a href="tel:+123456789" class="text-green-700">+1 234 567 89</a></p>\n </div>\n </section>\n\n <!-- Footer -->\n <footer class="bg-gray-800 text-gray-200 py-6 text-center">\n <p>© <span id="year"></span> Green Haven Gardening. All Rights Reserved.</p>\n </footer>\n\n <script>\n document.getElementById('year').textContent = new Date().getFullYear();\n document.getElementById('menu-btn').addEventListener('click', () => {\n const menu = document.getElementById('mobile-menu');\n menu.classList.toggle('hidden');\n });\n </script>\n</body>\n</html>"}
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Garden Care & Design — Professional Services</title>
+  <meta name="description" content="Friendly, professional garden maintenance and design: hedging, mowing, edging, pruning, seasonal work, planting, pond care, compost, and more." />
+  <meta name="theme-color" content="#14532d" />
+  <meta property="og:title" content="Garden Care & Design — Professional Services" />
+  <meta property="og:description" content="Hedging, mowing, pruning, seasonal planting, pond care, compost maintenance, house plant care, and more." />
+  <meta property="og:type" content="website" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            leaf: {
+              50: '#f0fdf4', 100: '#dcfce7', 200: '#bbf7d0', 300: '#86efac',
+              400: '#4ade80', 500: '#22c55e', 600: '#16a34a', 700: '#15803d',
+              800: '#166534', 900: '#14532d', 950: '#052e16'
+            },
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Decorative background pattern */
+    .bg-grid {
+      background-image: linear-gradient(to right, rgba(255,255,255,.06) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(255,255,255,.06) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+  </style>
+</head>
+<body class="antialiased text-slate-800 selection:bg-leaf-200/60">
+  <!-- Skip link -->
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:bg-white focus:text-slate-900 focus:px-3 focus:py-2 focus:rounded-lg focus:shadow">Skip to content</a>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/90 border-b border-slate-200">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between py-3">
+        <a href="#" class="flex items-center gap-3" aria-label="Home">
+          <span class="inline-grid place-items-center w-9 h-9 rounded-xl bg-leaf-600 text-white font-semibold">GC</span>
+          <span class="text-lg font-semibold tracking-tight">Garden Care & Design</span>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-6" aria-label="Primary">
+          <a href="#services" class="hover:text-leaf-700">Services</a>
+          <a href="#about" class="hover:text-leaf-700">About</a>
+          <a href="#work" class="hover:text-leaf-700">Work</a>
+          <a href="#contact" class="hover:text-leaf-700">Contact</a>
+        </nav>
+
+        <div class="hidden md:block">
+          <a href="#contact" class="inline-flex items-center gap-2 rounded-xl bg-leaf-700 px-4 py-2 text-white font-medium shadow hover:bg-leaf-800 focus:outline-none focus:ring-2 focus:ring-leaf-500 focus:ring-offset-2">
+            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" class="w-5 h-5"><path fill="currentColor" d="M2 6.75A2.75 2.75 0 0 1 4.75 4h14.5A2.75 2.75 0 0 1 22 6.75v10.5A2.75 2.75 0 0 1 19.25 20H4.75A2.75 2.75 0 0 1 2 17.25zM4.75 5.5A1.25 1.25 0 0 0 3.5 6.75v.29l8.21 5.14a.75.75 0 0 0 .78 0l8.01-5.02v-.
+29A1.25 1.25 0 0 0 19.25 5.5zM20.5 8.21l-7.24 4.54a2.25 2.25 0 0 1-2.35 0L3.5 8.5v8.75A1.25 1.25 0 0 0 4.75 18.5h14.5a1.25 1.25 0 0 0 1.25-1.25z"/></svg>
+            Get a quote
+          </a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-slate-300 hover:bg-slate-50" aria-expanded="false" aria-controls="mobileNav">
+          <span class="sr-only">Open menu</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6" aria-hidden="true"><path fill="currentColor" d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg>
+        </button>
+      </div>
+
+      <!-- Mobile nav -->
+      <nav id="mobileNav" class="md:hidden hidden pb-4" aria-label="Mobile">
+        <div class="grid gap-2">
+          <a href="#services" class="px-3 py-2 rounded-lg hover:bg-slate-100">Services</a>
+          <a href="#about" class="px-3 py-2 rounded-lg hover:bg-slate-100">About</a>
+          <a href="#work" class="px-3 py-2 rounded-lg hover:bg-slate-100">Work</a>
+          <a href="#contact" class="px-3 py-2 rounded-lg hover:bg-slate-100">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative bg-gradient-to-b from-leaf-900 via-leaf-800 to-leaf-700 text-white">
+    <div class="absolute inset-0 opacity-20 bg-grid"></div>
+    <div class="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
+      <div class="max-w-2xl">
+        <h1 class="text-4xl sm:text-5xl font-bold tracking-tight">Beautiful gardens, expertly cared for.</h1>
+        <p class="mt-4 text-white/90 text-lg leading-relaxed">Reliable, year‑round maintenance and thoughtful design for outdoor spaces of all sizes.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#services" class="inline-flex items-center rounded-xl bg-white text-leaf-900 font-medium px-5 py-3 shadow hover:bg-leaf-100 focus:outline-none focus:ring-2 focus:ring-white/70">Explore services</a>
+          <a href="#contact" class="inline-flex items-center rounded-xl ring-1 ring-white/60 px-5 py-3 font-medium hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/70">Book a visit</a>
+        </div>
+      </div>
+    </div>
+    <svg class="absolute bottom-0 left-0 right-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path fill="#fff" d="M0 64l48-10.7C96 43 192 21 288 21.3 384 21 480 43 576 53.3 672 64 768 64 864 58.7 960 53 1056 43 1152 37.3 1248 32 1344 32 1392 32h48v48H0z"/></svg>
+  </section>
+
+  <main id="main">
+    <!-- Services -->
+    <section id="services" class="py-16 sm:py-20">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <header class="max-w-3xl">
+          <h2 class="text-3xl font-bold tracking-tight text-slate-900">Services</h2>
+          <p class="mt-3 text-slate-600">Flexible one‑offs or recurring visits. Below is a clear list of what I can help with throughout the year.</p>
+        </header>
+
+        <!-- Grouped service cards -->
+        <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- Routine Care -->
+          <article class="rounded-2xl border border-slate-200 p-6 shadow-sm">
+            <h3 class="text-lg font-semibold">Routine care</h3>
+            <ul class="mt-3 space-y-2 text-slate-700">
+              <li class="flex gap-2"><span aria-hidden class="mt-1">🌿</span>hedging</li>
+              <li class="flex gap-2"><span aria-hidden class="mt-1">🌿</span>mowing</li>
+              <li class="flex gap-2"><span aria-hidden class="mt-1">🌿</span>edging</li>
+              <li class="flex gap-2"><span aria-hidden class="mt-1">🌿</span>pruning</li>
+              <li class="flex gap-2"><span aria-hidden class="mt-1">🌿</span>weeding throughout the year</li>
+              <li class="flex gap-2"><span aria-hidden class="mt-1">🌿</span>lifting and dividing plants</li>
+            </ul>
+          </article>
+
+          <!-- Seasonal Work -->
+          <article class="rounded-2xl border border-slate-200 p-6 shadow-sm">
+            <h3 class="text-lg font-semibold">Seasonal work</h3>
+            <ul class="mt-3 space-y-2 text-slate-700">
+              <li class="flex gap-2"><span aria-hidden class="mt-1">🍂</span>cutting back in autumn</li>
+              <li class="flex gap-2"><span aria-hidden class="mt-1">🍁</span>mulching before winter</li>
+              <li class="flex gap-2"><span aria-hidden class="mt-1">🌱</span>planting in spring and autumn</li>
+              <li class="flex gap-2"><span aria-hidden class="mt-1">🌷</span>bulb planting</li>
+            </ul>
+          </article>
+
+          <!-- Planting & Design -->
+          <article class="rounded-2xl border border-slate-200 p-6 shadow-sm">
+            <h3 class="text-lg font-semibold">Planting & design</h3>
+            <ul class="mt-3 space-y-2 text-slate-700">
+              <li class="flex gap-2"><span aria-hidden class="mt-1">🪴</span>border design</li>
+              <li class="flex gap-2"><span aria-hidden class="mt-1">🌳</span>fruit tree pruning and espalier</li>
+              <li class="flex gap-2"><span aria-hidden class="mt-1">🏡</span>house plant care</li>
+              <li class="flex gap-2"><span aria-hidden class="mt-1">🧑‍🌾</span>seasonal work</li>
+            </ul>
+          </article>
+
+          <!-- Ponds -->
+          <article class="rounded-2xl border border-slate-200 p-6 shadow-sm">
+            <h3 class="text-lg font-semibold">Ponds</h3>
+            <ul class="mt-3 space-y-2 text-slate-700">
+              <li class="flex gap-2"><span aria-hidden class="mt-1">💧</span>pond maintenance</li>
+              <li class="flex gap-2"><span aria-hidden class="mt-1">🌿</span>pond plant consultations</li>
+            </ul>
+          </article>
+
+          <!-- Soil & Compost -->
+          <article class="rounded-2xl border border-slate-200 p-6 shadow-sm">
+            <h3 class="text-lg font-semibold">Soil & compost</h3>
+            <ul class="mt-3 space-y-2 text-slate-700">
+              <li class="flex gap-2"><span aria-hidden class="mt-1">♻️</span>compost maintenance</li>
+              <li class="flex gap-2"><span aria-hidden class="mt-1">🧱</span>compost bay construction and instillation</li>
+              <li class="flex gap-2"><span aria-hidden class="mt-1">🪵</span>mulching before winter</li>
+            </ul>
+          </article>
+
+          <!-- One-off Projects -->
+          <article class="rounded-2xl border border-slate-200 p-6 shadow-sm">
+            <h3 class="text-lg font-semibold">Projects & one‑offs</h3>
+            <ul class="mt-3 space-y-2 text-slate-700">
+              <li class="flex gap-2"><span aria-hidden class="mt-1">🧰</span>lifting and dividing plants</li>
+              <li class="flex gap-2"><span aria-hidden class="mt-1">✂️</span>pruning</li>
+              <li class="flex gap-2"><span aria-hidden class="mt-1">🪴</span>planting in spring and autumn</li>
+              <li class="flex gap-2"><span aria-hidden class="mt-1">🌷</span>bulb planting</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="mt-10 rounded-2xl bg-leaf-50 p-6 ring-1 ring-leaf-100">
+          <p class="text-slate-700">Don’t see what you need? <a href="#contact" class="font-medium text-leaf-800 underline decoration-leaf-400 underline-offset-2">Get in touch</a> and I’ll tailor a plan for your garden.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-16 sm:py-20 bg-slate-50">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-2 lg:items-center">
+          <div>
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900">About</h2>
+            <p class="mt-4 text-slate-700 leading-relaxed">I provide reliable, detail‑oriented care with a focus on plant health and long‑term beauty. Whether you need weekly maintenance or a seasonal refresh, your garden is in safe hands.</p>
+            <ul class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 text-slate-700">
+              <li class="flex items-start gap-2"><span aria-hidden class="mt-1">✔️</span>Fully insured</li>
+              <li class="flex items-start gap-2"><span aria-hidden class="mt-1">✔️</span>Eco‑conscious practices</li>
+              <li class="flex items-start gap-2"><span aria-hidden class="mt-1">✔️</span>Tools & green‑waste handled</li>
+              <li class="flex items-start gap-2"><span aria-hidden class="mt-1">✔️</span>Clear, fair pricing</li>
+            </ul>
+          </div>
+          <div class="relative">
+            <div class="aspect-[4/3] w-full rounded-3xl bg-gradient-to-br from-leaf-200 via-leaf-100 to-white p-[2px] shadow">
+              <div class="h-full w-full rounded-[calc(theme(borderRadius.3xl)-2px)] bg-white grid place-items-center text-center p-8">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-16 h-16 mx-auto" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7m0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5"/></svg>
+                  <p class="mt-4 text-slate-600">Based locally — serving surrounding neighbourhoods.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work / Gallery (placeholder blocks) -->
+    <section id="work" class="py-16 sm:py-20">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <header class="max-w-3xl">
+          <h2 class="text-3xl font-bold tracking-tight text-slate-900">Recent work</h2>
+          <p class="mt-3 text-slate-600">A few before‑and‑after blocks to showcase results. Replace these with your own photos later.</p>
+        </header>
+        <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="h-44 rounded-2xl bg-slate-100 grid place-items-center text-slate-400">Image</div>
+          <div class="h-44 rounded-2xl bg-slate-100 grid place-items-center text-slate-400">Image</div>
+          <div class="h-44 rounded-2xl bg-slate-100 grid place-items-center text-slate-400">Image</div>
+          <div class="h-44 rounded-2xl bg-slate-100 grid place-items-center text-slate-400">Image</div>
+          <div class="h-44 rounded-2xl bg-slate-100 grid place-items-center text-slate-400">Image</div>
+          <div class="h-44 rounded-2xl bg-slate-100 grid place-items-center text-slate-400">Image</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="relative py-12">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-leaf-700 via-leaf-800 to-leaf-900 text-white">
+          <div class="absolute inset-0 bg-grid opacity-20"></div>
+          <div class="relative p-8 sm:p-12">
+            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+              <div>
+                <h3 class="text-2xl font-semibold">Let’s make your garden thrive</h3>
+                <p class="mt-2 text-white/90">Book a visit or request a free, no‑obligation quote.</p>
+              </div>
+              <a href="#contact" class="inline-flex items-center rounded-xl bg-white/95 text-leaf-900 font-medium px-5 py-3 shadow hover:bg-white focus:outline-none focus:ring-2 focus:ring-white/70">Get in touch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16 sm:py-20 bg-slate-50">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-2">
+          <div>
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900">Contact</h2>
+            <p class="mt-3 text-slate-700">Tell me about your garden and the services you’re interested in. I’ll respond promptly with availability and pricing.</p>
+
+            <div class="mt-6 rounded-2xl border border-slate-200 p-6 bg-white">
+              <dl class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-slate-700">
+                <div>
+                  <dt class="text-sm text-slate-500">Email</dt>
+                  <dd class="font-medium"><a class="hover:underline" href="mailto:hello@example.com">hello@example.com</a></dd>
+                </div>
+                <div>
+                  <dt class="text-sm text-slate-500">Phone</dt>
+                  <dd class="font-medium"><a class="hover:underline" href="tel:+441234567890">+44 1234 567890</a></dd>
+                </div>
+                <div class="sm:col-span-2">
+                  <dt class="text-sm text-slate-500">Hours</dt>
+                  <dd class="font-medium">Mon–Fri, 9:00–17:00</dd>
+                </div>
+              </dl>
+            </div>
+
+            <p class="mt-4 text-sm text-slate-500">Prefer WhatsApp or SMS? No problem — just mention it.</p>
+          </div>
+
+          <form class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm" aria-labelledby="contactFormTitle" onsubmit="event.preventDefault(); alert('Thanks! I\'ll be in touch shortly.');">
+            <h3 id="contactFormTitle" class="text-xl font-semibold">Request a quote</h3>
+            <div class="mt-4 grid gap-4">
+              <label class="grid gap-1">
+                <span class="text-sm text-slate-600">Name</span>
+                <input type="text" required class="w-full rounded-xl border-slate-300 focus:border-leaf-500 focus:ring-leaf-500" placeholder="Jane Doe" />
+              </label>
+              <label class="grid gap-1">
+                <span class="text-sm text-slate-600">Email</span>
+                <input type="email" required class="w-full rounded-xl border-slate-300 focus:border-leaf-500 focus:ring-leaf-500" placeholder="jane@example.com" />
+              </label>
+              <label class="grid gap-1">
+                <span class="text-sm text-slate-600">Phone</span>
+                <input type="tel" class="w-full rounded-xl border-slate-300 focus:border-leaf-500 focus:ring-leaf-500" placeholder="+44…" />
+              </label>
+              <label class="grid gap-1">
+                <span class="text-sm text-slate-600">Which services are you interested in?</span>
+                <textarea rows="4" class="w-full rounded-xl border-slate-300 focus:border-leaf-500 focus:ring-leaf-500" placeholder="e.g., mowing every two weeks, pond maintenance, bulb planting…"></textarea>
+              </label>
+              <div class="flex items-center gap-2">
+                <input id="consent" type="checkbox" class="rounded border-slate-300 text-leaf-600 focus:ring-leaf-500" required />
+                <label for="consent" class="text-sm text-slate-600">I consent to being contacted about my enquiry.</label>
+              </div>
+              <button type="submit" class="inline-flex justify-center rounded-xl bg-leaf-700 px-5 py-3 text-white font-medium shadow hover:bg-leaf-800 focus:outline-none focus:ring-2 focus:ring-leaf-500">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-slate-500">© <span id="year"></span> Garden Care & Design. All rights reserved.</p>
+      <nav class="text-sm" aria-label="Footer">
+        <a href="#services" class="hover:text-slate-900">Services</a>
+        <span aria-hidden class="mx-2 text-slate-300">•</span>
+        <a href="#about" class="hover:text-slate-900">About</a>
+        <span aria-hidden class="mx-2 text-slate-300">•</span>
+        <a href="#contact" class="hover:text-slate-900">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Schema markup for better SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GardenStore",
+    "name": "Garden Care & Design",
+    "areaServed": "Local",
+    "url": "https://example.com",
+    "email": "hello@example.com",
+    "telephone": "+441234567890",
+    "serviceType": [
+      "hedging",
+      "mowing",
+      "edging",
+      "pruning",
+      "lifting and dividing plants",
+      "seasonal work",
+      "cutting back in autumn",
+      "mulching before winter",
+      "weeding throughout the year",
+      "planting in spring and autumn",
+      "bulb planting",
+      "fruit tree pruning and espalier",
+      "border design",
+      "compost maintenance",
+      "pond maintenance",
+      "pond plant consultations",
+      "house plant care",
+      "compost bay construction and instillation"
+    ]
+  }
+  </script>
+
+  <!-- Small interactivity -->
+  <script>
+    // Mobile menu toggle
+    (function(){
+      const btn = document.getElementById('menuBtn');
+      const nav = document.getElementById('mobileNav');
+      if(btn && nav){
+        btn.addEventListener('click', () => {
+          const expanded = btn.getAttribute('aria-expanded') === 'true';
+          btn.setAttribute('aria-expanded', String(!expanded));
+          nav.classList.toggle('hidden');
+        });
+      }
+      // Footer year
+      const y = document.getElementById('year');
+      if(y){ y.textContent = new Date().getFullYear(); }
+    })();
+  </script>
+</body>
+</html>
